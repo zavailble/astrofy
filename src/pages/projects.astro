@@ -3,49 +3,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Product Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Order Search UX Redesign — Tiger Brokers"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Redesigned the derivatives order history search experience. Introduced fuzzy Chinese/English name search and derivative-underlying asset association. Daily PV from 24K to 28K, related customer complaints dropped to zero."
     url="#"
-    badge="NEW"
+    badge="Fintech"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="HK Stock Options Paper Trading (0-to-1) — Tiger Brokers"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Designed simulated matching logic for real-time and delayed market scenarios. Benchmarked against Futu & IBKR. Achieved 100+ weekly simulated trades post-launch, building a complete learn-to-live trading path."
+    url="#"
+    badge="Fintech"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Core Trading UX Consistency Governance — Tiger Brokers"
+    img="/post_img.webp"
+    desc="Identified 6 inconsistent interaction standards across 3 order pages × 2 platforms. Unified interaction specs for all product categories. Projected feature retention improvement from 28% to 30%."
     url="#"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Growth & Content Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Off-Site Content Distribution Platform — Hupu"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Designed an automated content distribution system with AI-powered production. Single campaign: 3,288 content pieces, 12.64M impressions, 8,449 new-user referrals. Trial run achieved 10,000 new users per week."
     url="#"
-    badge="FOSS"
+    badge="Growth"
   />
-  <div class="divider my-0"></div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Independent Projects</div>
+  </div>
+
   <HorizontalCard
-    title="Demo Project 4"
+    title="Khrushchev Simulator — AI-Driven Historical Strategy SLG"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="An indie AI strategy game with LLM-driven emergent narrative. 5 factions, 31 characters, 10 endings. Built core loop of intelligence → negotiation → settlement → world state. Prompt iteration drove overflow rate to zero, compliance to 95%+."
     url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    badge="AI"
   />
 </BaseLayout>
